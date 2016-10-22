@@ -1,0 +1,110 @@
+@charset"utf-8";
+
+//定义变量
+@yellowcolor:yellow;
+@redcolor:#FE4C40;
+@bluecolor:#295095;
+@whitecolor:#ffffff;
+@blackcolor:red;
+@content-font: "Microsoft YaHei";
+@font-size1:15px;
+@font-size2:20px;
+@font-size3:40px;
+@width:750px;
+
+
+body,div,table,tr,td,ul,li,span{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+	font-family:@content-font;
+}
+.wrap{
+	width:@width;
+	margin:0 auto;
+	position: relative;
+	top:150px;
+	//站牌头部信息
+	.header{
+		width:@width;
+		height: 68px;
+		margin:0 auto;	
+		background-color: @yellowcolor;
+		.main-table{
+			margin:0 auto;
+			.main-table-td1{
+				width:25px;
+				font-size: @font-size1;
+				position: relative;
+    			left: -8px;
+			}
+			.main-table-td2{
+				width: 100px;
+				font-size: @font-size3;
+			}
+			.inner-table1-tr1{
+				font-size: @font-size2;
+			}
+			.inner-table1-tr2{
+				font-size: @font-size1;
+			}
+			.main-table-td3{
+				width: 60px;
+				.main-table-td3-div1{
+					display: inline-block;
+					background-color:@blackcolor;
+					width: 23px;
+				    height: 10px;
+				    position: relative;
+				    top:-13px;
+				    left:17px;
+				}
+				.main-table-td3-div2{
+					display: inline-block;
+					width: 0;
+				    height: 0;
+				    border:10px solid transparent;
+				 	border-left: 20px solid @blackcolor;
+				 	position: relative;
+				    top:-9px;
+				    left:10px;
+				}
+			}
+			.inner-table2-tr1{
+				font-size: @font-size2;
+			}
+			.inner-table2-tr2{
+				font-size: @font-size1;
+			}
+			.inner-table3{
+				position: relative;
+    			left: 10px;
+    			.inner-table3-td2{
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	//详细站点信息
+	.content{
+		background-color: @bluecolor;
+		width:@width;
+		height: 175px;
+		color: @whitecolor;
+		ul{
+			margin:0 auto;
+		    display: inline-block;
+		    li{
+		    	float:left;
+				width: 25px;
+				list-style: none;
+		    }
+		    .myhome{
+				color:@redcolor;
+			}
+		}
+	}
+}
